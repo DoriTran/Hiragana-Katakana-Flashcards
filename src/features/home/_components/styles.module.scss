@@ -1,0 +1,26 @@
+@import "index.scss";
+
+.body {
+  @include flexRow;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 10px 20px;
+}
+
+.info {
+  @include flexCol;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .label {
+    font-weight: $semibold;
+    font-size: $large;
+    padding-bottom: 5px;
+  }
+
+  .value {
+    font-weight: $light;
+    font-size: $middle;
+  }
+}

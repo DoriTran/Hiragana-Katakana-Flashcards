@@ -1,0 +1,26 @@
+@import "index.scss";
+
+.card {
+  @include flexRow;
+  justify-content: flex-start;
+  gap: 25px;
+  background-color: var(--primary-light) !important;
+  width: fit-content;
+  padding: 15px;
+  padding-left: 20px;
+
+  .icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    @include flexRow;
+    background-color: var(--background);
+  }
+
+  .content {
+    width: 60vw;
+    max-width: 600px;
+    border-radius: 15px;
+    background-color: var(--background);
+  }
+}
